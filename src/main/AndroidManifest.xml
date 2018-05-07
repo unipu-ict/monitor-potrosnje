@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.unipu.inf.ma.monitorpotrosnje">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Monitor Potrošnje"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Monitor Potrošnje"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Monitor potrošnje" >
+        </activity>
+        <activity
+            android:name=".BudgetActivity"
+            android:label="Budžet" >
+        </activity>
+        <activity
+            android:name=".ExpenseActivity"
+            android:label="Troškovi" >
+        </activity>
+
+        <activity
+            android:name=".ReportsActivity"
+            android:label="Izvješće" >
+        </activity>
+    </application>
+
+</manifest>
